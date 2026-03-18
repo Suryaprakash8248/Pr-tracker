@@ -1,0 +1,21 @@
+{
+  "name": "pr-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i --prefix backend && npm i --prefix frontend1/@latest && npm run build --prefix frontend1/@latest",
+    "start": "npm run start --prefix backend "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suryaprakash8248/Pr-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suryaprakash8248/Pr-tracker/issues"
+  },
+  "homepage": "https://github.com/Suryaprakash8248/Pr-tracker#readme"
+}

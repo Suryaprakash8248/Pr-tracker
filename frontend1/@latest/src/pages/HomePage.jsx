@@ -12,7 +12,7 @@ function HomePage() {
     const fetchPrs = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:4000/pr/");
+        const response = await axios.get("https://pr-tracker-2.onrender.com/pr");
         setPrs(response.data);
       } catch (error) {
         console.log("Error in fetching prs", error);

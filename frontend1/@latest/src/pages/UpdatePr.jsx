@@ -41,7 +41,7 @@ function UpdatePr() {
   useEffect(()=> {
     const fetchThisPr = async ()=> {
       try {
-        const res = await axios.get(`http://localhost:4000/pr/${id}`);
+        const res = await axios.get(`https://pr-tracker-2.onrender.com/pr/${id}`);
         setWorkout(res.data.workout);
         setWeight(res.data.weight);
         setReps(res.data.reps);

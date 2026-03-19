@@ -36,7 +36,7 @@ function CreatePr() {
       toast.error("fill  Every single coloumns")
     } else {
     try {
-      await axios.post("http://localhost:4000/pr/", {workout:workout,weight:Number(weight),rep:Number(reps)});
+      await axios.post("https://pr-tracker-2.onrender.com/pr", {workout:workout,weight:Number(weight),rep:Number(reps)});
 
       sound.play();
       fireCrackers();

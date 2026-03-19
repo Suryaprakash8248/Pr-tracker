@@ -27,7 +27,7 @@ function HomePage() {
   const handleDelete = async (id) => {
     try {
       if (window.confirm("Delete this PR?")) {
-        await axios.delete(`http://localhost:4000/pr/${id}`);
+        await axios.delete(`https://pr-tracker-2.onrender.com/pr/${id}`);
         setPrs(prev => prev.filter(pr => pr._id !== id));
         toast.success("PR deleted");
       }

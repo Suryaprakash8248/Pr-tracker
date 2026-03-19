@@ -64,7 +64,7 @@ function UpdatePr() {
     } else {
 
     try {
-      await axios.put(`http://localhost:4000/pr/${id}`, {
+      await axios.put(`https://pr-tracker-2.onrender.com/pr/${id}`, {
         workout,
         weight,
         rep:reps
